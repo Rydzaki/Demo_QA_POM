@@ -33,7 +33,7 @@ public class PracticeFormTests extends TestBase {
                 .enterBirthDay("16 August 1987")
                 .enterSubjects(new String[]{"Maths", "Chemistry"})
                 .selectHobby(new String[]{"Sports", "Reading"})
-                .uploadFile("R:/бэтмэн.jpg")
+                .uploadFile("R:/BM.jpg")
                 .selectState("NCR")
                 .selectCity("Delhi")
                 .clickOnSubmit()

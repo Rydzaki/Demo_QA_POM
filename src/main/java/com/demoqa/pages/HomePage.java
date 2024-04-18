@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage{
+
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -40,4 +42,13 @@ public class HomePage extends BasePage{
         click(interactions);
         return new SidePanel(driver);
     }
+
+    @FindBy(css = ".top-card:nth-child(1)")
+    WebElement elements;
+
+    public SidePanel getElements(){
+        click(elements);
+        return new SidePanel(driver);
+    };
+
 }
